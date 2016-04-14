@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src='http://code.jquery.com/jquery-1.10.2.j'></script>
+        <script src='http://code.jquery.com/ui/1.11.4/jquery-ui.js'></script>
+		<meta charset="UTF-8">	
+		<title>HTML300: Week One</title>  
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>APIs Assignment 1: Number Form</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+       
+        <script>
+       function showInput() {
+        var number_entered =  document.getElementById("user_input").value;
+        document.getElementById('display').innerHTML = number_entered;
+        }
+        </script>
+ 
+        <form id="myForm">
+         <label><b>Enter a Number</b></label>
+         <input type="number" name="integer" id="user_input" required placeholder="1" min="1" value="1">
+       </form>      
+       
+        <div id="submit">
+          <input type="submit" onclick="showInput();"><br />
+        </div>
+      
+        <div id='display'>
+          <p>Numbers Chosen: </p>
+          <p>Your Sum: </p>
+          <p>Your Average: </p>
+      </div>
+      
+      <script>
+         
+         var numberOf = 0;
+         var sum = 0;
+         var average = 0;
+         var results = document.getElementById('display');
+         
+          function showInput(){
+            //parseInt around the number or it will be seen as a string instead of a number
+            var number_entered = parseInt(document.getElementById("user_input").value);
+            var output = "";
+                                          
+            numberOf += 1;
+            sum += number_entered;
+            average = sum/numberOf;
+                                          
+            output += '<p> Numbers Chosen: </p>';
+            output += numberOf;                          
+            output += '<p> Your Total: </p>';
+            output += sum;
+            output += '<p> Average: </p>';
+            output += average;
+                                          
+            results.innerHTML = output;                                  
+          }
+      </script>
+      
+        <div id="buttonReset">
+          <button id="reset" name="reset">Reset Form</button> 
+          <script>
+            var resetButton = document.getElementById("reset");
+            resetButton.addEventListener("click", reset, false);
+         
+            function reset(evt) {
+              document.getElementById("myForm").reset();
+              results.innerHTML = "<p>Numbers Chosen: </p><p> Your Total: </p><p>Your Average: </p>";
+              numberOf = 0;
+              sum = 0;
+              average = 0;     
+          }
+       </script>
+        </div><!-- closing buttonReset div tag -->	
+        
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; Copyright 2016 - Charles Rex Productions</p>
+			
+		</footer>
+  </body>
+</html>
+<!--
+  //ENTER A NUMBER
+//INCLUDE A FORM - INCREMENT IS OUTPUTTED AS A SUM OF PREVIOUS NUMBER
+//ALSO SHOW THE MEAN
+//RESET BUTTON STARTS EVERYTHING OVER AT ZERO
+//ALSO PREVENTION OF ANYTHING OTHER THAN A NUMBER BEING ERRORED - OR MAKE IT COME ACROSS AS AN ERROR - AND IT DISPLAYS A MESSAGE THAT SAYS "ERROR"
+//JQUERY HAS A .value
+//YOU'LL HAVE AN ONCLICK FOR THE SUBMIT
+   -->
