@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">	
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <title>Homework Two Dynamic Table</title>  
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
+  </head>
+  
+  <!----section ONE!--->
+  
+  <body>
+    <header>
+			<!-- the "banner" area or title of the page-->
+			<h1>APIs Assignment 2: Object List</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header><!--- end Header --->
+        
+     
+    <div id="tab">
+      <form id="basic" method="post" action="#" autocomplete="on">
+        <fieldset>
+          <li>
+            <label>First Name</label><input id="f-name-label" type="text" name="first-name" placeholder="Your First Name" required />
+          </li>
+          <li>
+            <label>Last Name</label><input id="l-name-label" type="text" name="last-name" placeholder="Your Last Name" required />
+          </li>
+          <li>
+            <label>E-mail Contact</label>
+            <input id="email" type="email" name="email" required placeholder="Enter a valid email address" autocomplete="off"/>
+          </li>
+           <input id = "button" type = "button" value = " Add " onclick = "AddData()">
+          </fieldset>
+        </form>
+    </div>
+    
+        
+    <section id="data">
+      <table id="list">
+        <thead>
+        <tr>
+          <th></th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>E-mail Contact</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+        
+        <!--<tr>
+        <th scope="row">User One</th>
+          <td id="first_name">#</td>
+          <td id="last_name">#</td>
+          <td id="user_age">#</td>
+        </tr>
+        <tr>
+        <th scope="row">User Two</th>
+          <td id="first_name">#</td>
+          <td id="last_name">#</td>
+          <td id="user_age">#</td>
+        </tr>
+          <th scope="row">User Three</th>
+          <td id="first_name">#</td>
+          <td id="last_name">#</td>
+          <td id="user_age">#</td>
+        <tr>
+        <th scope="row">User Four</th>
+          <td id="first_name">#</td>
+          <td id="last_name">#</td>
+          <td id="user_age">#</td>
+        </tr>
+        <tr>
+          <th scope="row">User Five</th>
+          <td id="first_name">#</td>
+          <td id="last_name">#</td>
+          <td id="user_age">#</td>
+        </tr>
+    --->   
+        </tbody>
+      </table> 
+      <input id = "button" type = "button" value = " Reset " onclick = "ResetForm()">
+<!--      <button>Add</button>-->
+
+    </section>  
+    
+    <!--- SECTION TWO --->
+  </body>
+  
+  <footer>
+    <p>&copy; Copyright 2016 - Charles Rex Productions</p>
+  </footer><!--- /end footer -->
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+</html>
+  
