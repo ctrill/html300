@@ -68,7 +68,7 @@ header {
   margin-bottom: 2em;
   background: white;
   margin: 36px auto;
-  max-width: 65%;
+  width: 65%;
 }
 
 h1 {
@@ -99,9 +99,9 @@ box-shadow:0px 0px 0px 1px purple inset;
   margin: 36px auto;
 }
 
-div, section {
+div {
   margin: 36px auto;
-  width: 65%;
+  max-width: 65%;
   padding: 2em; 
   box-shadow:0px 0px 0px 1px black inset;  
   background: white;
