@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+      <script type="text/javascript" src="javascript/jquery-2.2.3.js"></script><!---local copy allows for work when not online! --->
+      <script type="text/javascript" src="javascript/javascript.js"></script>
+      <meta charset="UTF-8">	
+      <title>HTML300: Week Three Assignment</title>  
+      <link rel="stylesheet" type="text/css" href="styles/reset.css">
+      <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
+    </head>
+    
+    <header>
+      <!-- the "banner" area or title of the page-->
+      <h1>HTML5 APIs Assignment 3: Numbers and Strings</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header><!--- end Header --->
+  
+  
+  
+    </header><!---end HEADER --->
+  
+    <body class="page"><!-- everything that is visual goes in the body tag  -->
+      <div id="myForm">
+        <h4>Enter numbers or text below:</h4>      
+        
+        <textarea rows="4" cols="50" name="user_input" id="user_input" placeholder="It was the best of times..."> 
+        </textarea>
+        <!--
+        
+        <script type="text/javascript">
+          $(document).ready(function () {
+          $("#submit_button").click(function () {
+          var textAreaValue = $("#user_input").val();
+          alert(textAreaValue);
+            });
+          });
+//           $("#submit_button").click(function(e){
+//          e.preventDefault();
+//          value = $('#user_input').val();
+//          $('#message').text( value );
+//            });
+        </script>       
+-->
+        
+        <h4>
+          <button type="submit" id="submit_button">Submit</button>
+          <input type="button" id="reset" value="Reset"
+        </h4>
+          <p id="demo"></p>
+          <script type="text/javascript">
+            
+//          don't forget to add onclick="myFunction()" to button before ...
+//           function myFunction() {
+//            var x = document.getElementById("user_input").value;
+//            document.getElementById("message").innerHTML = x;
+//            }
+//            
+            
+            //=======PRE-MODIFIED CODE COURTESY OF TUTORIAL REPUBLIC
+            $(document).ready(function(){
+            $("#submit_button").click(function(){
+            var words = $.trim($("textarea").val()).split(" ");
+            document.getElementById("message").innerHTML = words.length;
+            
+        });
+    });
+</script>
+            
+          </script>
+      </div> 
+        
+      <div id="output">
+        Word Count:   <span id="message"></span>
+        Match word:
+          <input type="text" id="match" value="fox" />
+          <input type="button" onclick="findWord()" value="Find word" />
+<!--    
+        <h1>The Numbers</h1>
+        <tbody id= "numbers">
+        </tbody>
+        <h1>The Strings</h1>
+        <tbody id="words">
+        </tbody>
+-->
+      </div>
+    </body><!---end BODY --->
+      
+    <footer>
+      <p>&copy; Copyright 2016 - Charles Rex Productions</p>
+    </footer><!--- end FOOTER-->
+  
+</html>
+  
