@@ -68,7 +68,7 @@ header {
   margin-bottom: 2em;
   background: white;
   margin: 36px auto;
-  width: 65%;
+  max-width: 65%;
 }
 
 h1 {
