@@ -1,0 +1,117 @@
+html{
+  display: block; 
+  background: gray;
+    }
+
+/* remember the target divided by content = result formula */
+
+body { 
+  font: normal 100% "Cambria", "Georgia", "sans-serif";
+  margin: 36px auto;
+  width: 90%;  
+}
+
+form {
+/*  display: none;  */
+  background: white;
+}
+
+/* ==========================
+TABLE STYLING COURTESY OF JON DUCKETT "HTML & CSS" */
+/*
+
+table { 
+  width: 65%;
+}
+th, td {
+  padding: .7em 1em 1em 1em;
+}
+th {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: left;
+}
+
+tr.even {
+ background-color: #efefef; 
+}
+tr.odd {
+ background-color: #c3e6e5; 
+}
+
+tr:hover {
+  background-color: #c3e6e5;
+}
+
+td {
+  border: 1px solid #0088dd;
+  padding: .66666666em;
+}
+
+table.alpha {
+ empty-cells: show; 
+}
+  
+table.beta {
+  empty-cells: hide;  
+}
+
+ ========================== END TABLE STYLING 
+*/
+
+header {
+  padding: 2em; 
+  box-shadow:0px 0px 0px 1px black inset;
+  margin-bottom: 2em;
+  background: white;
+  margin: 36px auto;
+  width: 65%;
+}
+
+h1 {
+  font-size: 1.5em; /* 16px / 24px */
+  font-style: italic;
+}
+
+h1 a {
+  color: #747474; 
+  font: bold .4583333333em /* 11px / 24px */ "Calibri", "Optima", "Arial", "serif";
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-decoration: none;  
+}
+
+h4 {
+  padding: .5em; 
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+footer {
+ clear: both;
+ padding: 0.8em 5.33333%;  
+box-shadow:0px 0px 0px 1px purple inset;
+  background: white;
+  max-width: 30%; 
+  margin: 36px auto;
+}
+
+div {
+  margin: 36px auto;
+  max-width: 65%;
+  padding: 2em; 
+  box-shadow:0px 0px 0px 1px black inset;  
+  background: white;
+}
+
+textarea {
+  box-shadow:0px 0px 0px 1px black inset; 
+  max-width: 90%;
+}
+
+button {
+  clear:both; 
+}

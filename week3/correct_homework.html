@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+      <script type="text/javascript" src="javascript/jquery-2.2.3.js"></script><!---local copy allows for work when not online! -->
+      <meta charset="UTF-8">	
+      <title>HTML300: Week Three Assignment</title>  
+      <link rel="stylesheet" type="text/css" href="styles/reset.css">
+      <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
+  </head>
+  <body class="page"><!-- everything that is visual goes in the body tag  --> 
+    <header>
+      <!-- the "banner" area or title of the page-->
+      <h1>HTML5 APIs Assignment 3: Numbers and Strings</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header><!---end HEADER -->
+
+    <form>
+      <label>
+      "enter numbers or test: "
+        <br>
+        <textarea id="user-input" rows="5" cols="50"></textarea>
+      </label>
+      <br>
+      <button type="submit" id="submit">Submit></button>
+      <button type="button" id="reset">Reset</button>
+    
+      <div id="message"></div>
+    </form>
+    <h2>The Numbers</h2>  
+    <table>
+      <tbody>
+        <tr>
+          <td>Count</td>
+          <td id="count"></td>
+        </tr>
+       <tr>
+          <td>Sum</td>
+          <td id="sum"></td>
+        </tr>
+         <tr>
+          <td>Average</td>
+          <td id="average"></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    <h2>The Strings</h2>
+    <strong>Concatenated:</strong>
+    <br>
+    
+    
+    </form>
+    
+    <script type="text/javascript">
+      (function() {
+        'use strict';
+        
+        var count = 0;
+        var sum = 0;
+        var average;
+        var concatenatedString = '';
+        var wordCounts = {};
+        
+        DisplayResults();
+        
+        $('#submit').on('click', processForm);
+        $('#reset').on('click', reset);
+        $('#user-input').on('focus', clearInput);//opposite of focus is blur... 
+        
+      function processForm(evt) {
+        var val = $('#user-input').val();
+        var num = +val;
+        if ( isNaN(num)) {
+          processString(val)
+        } else {
+          processNumber(num);
+        }
+        evt.preventDefault();//if you don't it will try to submit the form...causing page to refresh
+      }
+       
+        function processString( string ){
+         concatenatedString += string;
+          updateWordCounts( string );
+          DisplayResults( );          
+        }
+        
+        function updateWordCounts( string ){
+            var words = string.split( /\s/ ); //split on whitespace, could also use ''
+            words.forEach( function( word) {
+              word = word.toLowerCase();
+              word = word.replace( /\W/, ''); //remove non-word characters
+              if ( word.length === 0 ) {
+                return;
+              }
+            }
+        }
+        
+                          
+      function processNumber (number){
+        ++count;
+        sum += number;
+        
+        if(count > 0){
+          average = sum / count;
+        }
+              else{
+                average = undefined;
+              }
+              DisplayResults;
+            }
+        
+          function reset() {
+          count = 0;
+          sum = 0;
+          average = undefined;
+          concatenatedString = '';
+          wordCounts = {};
+          DisplayResults ();
+        }
+          
+        function DisplayResults() {
+             displayValue( '#count', count );
+              displayValue( '#sum', sum );
+              displayValue( '#average', average );
+              displayValue( '#concatenation', concatenatedString );
+              displayWordCounts():
+              
+      function displayValue( selector, value) {
+        if (value === undefined ) {
+          $( selector ).empty( );
+        } else {
+          $(selector).text.(value);
+            }
+      }
+        
+      
+      function clearInput() {
+         $('#user-input').val( '' ); 
+        }
+        
+        
+      })();
+        </script>  
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+      <p>&copy; Copyright 2016 - Charles Rex Productions</p>
+    </footer><!--- end FOOTER-->
+  </body><!---end BODY -->
+</html>
+  
