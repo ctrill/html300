@@ -2,37 +2,53 @@
 <html>
   <head>
       <script type="text/javascript" src="javascript/jquery-2.2.3.js"></script><!---local copy allows for work when not online! -->
-      <script type="text/javascript" src="javascript/javascript.js"></script>
+      <script type="text/javascript" src="javascript/javascript.js"></script> 
+      <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<!--
       <script type="text/javascript" src="javascript/leaflet-src.js"></script>
       <script type="text/javascript" src="javascript/leaflet.js"></script>
+-->
       <meta charset="UTF-8">	
       <title>HTML300: Week Four Assignment</title>  
       <link rel="stylesheet" type="text/css" href="styles/reset.css">
       <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
-      <link rel="stylesheet" type="text/css" href="styles/leaflet.css">
+<!--      <link rel="stylesheet" type="text/css" href="styles/leaflet.css">-->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geocoder-mapzen/1.4.0/leaflet-geocoder-mapzen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geocoder-mapzen/1.4.0/leaflet-geocoder-mapzen.js"></script>
   </head>
   <body class="page"><!-- everything that is visual goes in the body tag  --> 
     <header>
       <!-- the "banner" area or title of the page-->
-      <h1>HTML5     Assignment 4: </h1> <!-- only h1 per page (for SEO purposes) --> 	
+      <h1>HTML5 Assignment 4: Maps</h1> <!-- only h1 per page (for SEO purposes) --> 	
     </header><!---end HEADER -->
     
-  
+    <section id="main">
+      <h2>Map</h2>
+      <div id="mapid">
+        <script>
+            var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a       href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'your.mapbox.project.id',
+            accessToken: 'your.mapbox.public.access.token'
+              }).addTo(mymap);
+
+          //courtesy MAPZEN plugin for leaflet maps!
+          
+          var geocoder = L.control.geocoder('search-7ueo5uA').addTo(mymap); 
+          
+        </script>
+      </div>
+    </section>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <aside id="map_search">
+        
+    </aside>  
     <footer>
       <p>&copy; Copyright 2016 - Charles Rex Productions</p>
     </footer><!--- end FOOTER-->
