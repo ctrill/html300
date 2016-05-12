@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+      <script type="text/javascript" src="javascript/jquery-2.2.3.js"></script><!---local copy allows for work when not online! -->
+      <script type="text/javascript" src="javascript/jquery-ui.js"></script>
+      <script type="text/javascript" src="javascript/javascript.js"></script> 
+      <meta charset="UTF-8">	
+      <title>HTML300: Week Four Assignment</title>  
+      <link rel="stylesheet" type="text/css" href="styles/reset.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <link rel="stylesheet" href="styles/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="styles/basic_style.css">
+  </head>
+  <body class="page"><!-- everything that is visual goes in the body tag  --> 
+    <header>
+      <!-- the "banner" area or title of the page-->
+      <h1>HTML5 Assignment 5: Inputs and Drag | Drop</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header><!---end HEADER -->
+    
+    <section id="main">
+      <h2>Inputs</h2>
+      <div id="inputs"> 
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Control Type</th>
+              <th scope="col">Control</th>
+              <th scope="col">Value entered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <th scope="row" style="text-align: center; vertical-align: middle;">input type="checkbox"</th>
+            <td class="checkbox"><input type="checkbox" id ="chckbox"/></td>
+            <td id="chckbox_output"></td>
+            </tr>
+            <tr>
+            <th scope="row" style="text-align: center; vertical-align: middle;">input type="radio"</th>
+            <td id="radio">    <input type="radio" name="First" class="firstRadio" text="First">First<br>
+              <input type="radio" name="Second" class="secondRadio" value="">Second<br>
+              <input type="radio" name="Third" class="thirdRadio" value="">Third<br>
+              </td>
+            <td class="radio_output"></td>
+            </tr>
+            <th scope="row" style="text-align: center; vertical-align: middle;">input type="text"</th>
+            <td id="text"><input type="text" class="textinput"></td>
+            <td></td>
+            <tr>
+            <th scope="row" style="text-align: center; vertical-align: middle;">textarea</th>
+            <td id="textarea"><textarea rows="2" cols="25" name="user_input" id="user_input" placeholder="It was the best of times..."> 
+        </textarea></td>
+            <td></td>
+            </tr>
+            <tr>
+            <th scope="row" style="text-align: center; vertical-align: middle;">select</th>
+            <td id="select">
+             <select name="dropdown">
+            <option value="null"></option>
+            <option value="first">First</option>
+            <option value="second">Second</option>
+            <option value="third">Third</option>
+            <option value="fourth">Fourth</option>
+            <option value="fifth">Fifth</option>
+          </select>  
+              
+              
+            </td>
+            <td></td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+<!--      this code is courtesy JQUERY guides-->
+      <h2>Drag and Drop</h2>
+      <div id="drag_drop">
+        <div id="draggable3" class="draggable ui-widget-content">
+        <p>I'm contained within the box</p>
+        </div>
+        <div class="draggable ui-widget-content">
+        <p id="draggable5" class="ui-widget-header">I'm contained within my parent</p>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Copyright 2016 - Charles Rex Productions</p>
+    </footer><!--- end FOOTER-->
+  </body>
+</html>
