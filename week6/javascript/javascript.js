@@ -28,22 +28,6 @@ $('#chckbox').click(function () {
   }
 });
   
-
-//displayAllINputValues( );
-
-//$('input, textarea, select').on( 'change', displayNewValue);
-
-//function displayAllINputValues( ) {
-
-
-}
-
-//define variables - what you're trying to pass through - typically global variables
-//define event handlers - what the event is - uses $(' using the damn variables or whatever) and it shows what are you trying to fucking do!  You can put local variables here and pass through as a parameter in the function i.e use of ()
-//define function? - this explains to the browser how to do it
-
-
-  
   
   
   
