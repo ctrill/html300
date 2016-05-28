@@ -1,13 +1,16 @@
 html{
   display: block; 
-  background: black;
     }
 
 /* remember the target divided by content = result formula */
 
 body {
-  background-color: black;
   font: normal 100% "Cambria", "Georgia", "sans-serif";
+  background-image: url(../images/BCB-Background-Image1.jpg);
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center center;
 }
 
 header {
@@ -15,6 +18,13 @@ header {
   box-shadow:0px 0px 0px 1px black inset;
 }
 
+/* div {
+ opacity: .50; /* Standard: FF gt 1.5, Opera, Safari, CSS3 */
+    /* filter: alpha(opacity=50); /* IE lt 8 */
+    /* -ms-filter: "alpha(opacity=50)"; /* IE 8 */
+    /* -khtml-opacity: .50; /* Safari 1.x */
+    /* -moz-opacity: .50; /* FF lt 1.5, Netscape */
+  
 h1 {
   font-size: 1.5em; /* 16px / 24px */
   font-style: italic;
@@ -88,5 +98,11 @@ box-shadow:0px 0px 0px 1px purple inset;
   background: white;
 }
 
-
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(../images/BCB-Background-Image1.jpg);
+  }
+}
 
