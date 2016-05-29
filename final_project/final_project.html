@@ -2,12 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
     <title>Charles Rex Portfolio</title>  
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/basic_style.css">
+    <link rel="stylesheet" type="text/css" href="css/basic_style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
   </head>
   
   <body>
@@ -18,36 +21,93 @@
       
       <div class="blog section">
         <section class ="main">
-          <h1 class="lede">Latest update from <a href="#">Portfolio!</a></h1>
+          <h2 class="lede">Latest update from <a href="#">Portfolio!</a></h2>
           <article class="article">
+            <h2>Article Class</h2>
             <p>Bacon ipsum dolor amet filet mignon pancetta ham hock pork fatback ground round bacon beef short loin, sausage kevin andouille beef ribs pig. Pork belly fatback boudin tri-tip doner beef ribs ground round chuck. Tail rump pancetta, doner jowl capicola boudin filet mignon andouille frankfurter pork loin.
             </p>
-            <figure>
-              <p>
-                <img src="images/placeholder.jpg" alt="placeholder" />
-                <span class="figcaption">caption goes here</span>
-              </p>
-            </figure>
           </article>
         </section><!--- end main section -->
-        
-        <aside class="other">
-          <div class="recent-entries">
-            <h1>Recent Entries</h1>
-            <ul>
-              <li>Pork</li>
-              <li>Bacon</li>
-              <li>Beans</li>
-              <li>Brisket</li>
-            </ul>
-          </div>
-        </aside><!--- /end aside -->
-            
-        <footer>
+      </div>
+      
+      <section class="intro">
+  <div class="container">
+    <h2>Vertical Timeline &darr;</h2>
+  </div>
+</section> 
+
+<section class="timeline">
+<ul>
+    <li>
+      <div>
+        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+  </ul>
+</section>
+      
+      
+      
+      <footer>
         <p>&copy; Copyright 2016 - Charles Rex Productions</p>
 	   
-        </footer><!--- /end footer -->
-      </div><!--- /end main --->
-    </div><!-- /end page -->
-  </body>
+      </footer><!--- /end footer -->
+      <script type="text/javascript" src="javascript/timeline.js"></script>
+    </div>
+  </body> 
 </html>

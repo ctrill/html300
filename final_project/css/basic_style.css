@@ -42,7 +42,6 @@ h1 a {
   margin: 36px auto;
   width: 90%;  
   border: solid white;
-  background-color: #DCDBD9;
 }
 
 .lede {
@@ -51,18 +50,12 @@ h1 a {
 
 .blog {
   margin: 0 auto 53px;
-  width:  93.75%;  
-  border: solid blue;
 }
 
 .blog .main {
   float: left;
-  width: 62.8888889%;
   box-shadow:0px 0px 0px 1px red inset;
-}
-
-.main {
- background: white; 
+  background: white; 
 }
 
 .figure {
@@ -105,4 +98,3 @@ box-shadow:0px 0px 0px 1px purple inset;
     background-image: url(../images/BCB-Background-Image1.jpg);
   }
 }
-
