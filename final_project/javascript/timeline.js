@@ -1,3 +1,12 @@
+$('.accordion').on('click', '.accordion-control', function(e){
+  e.preventDefault();
+  $(this)
+  .next('#timebox')
+  .not(':animated')
+  .slideToggle();
+    
+});
+
 (function() {
 
   'use strict';

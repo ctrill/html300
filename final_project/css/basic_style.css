@@ -67,6 +67,7 @@ div {
   background: white;  
   background-color: rgba(255,255,255,0.75);
   padding-bottom: 2em;
+  min-height: inherit;
 }
 
 .figure {
