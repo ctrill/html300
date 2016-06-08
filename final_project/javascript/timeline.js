@@ -1,26 +1,3 @@
-//$('.accordion').on('click', '.accordion-control', function(e){
-//  e.preventDefault();
-//  $(this)
-//  .next('#timebox')
-//  .not(':animated')
-//  .slideToggle();
-//    
-//});
-
-//(function($){
-//  $.fn.accordion = function(speed) {
-//    this.on('click', '.accordion-control', function(e){
-//      e.preventDefault();
-//      $(this)
-//        .next('#timebox')
-//        .not(':animated')
-//        .slideToggle(speed);
-//    });
-//    return this;
-//  }
-//  
-//})(jQuery);
-
 (function() {
 
   'use strict';
