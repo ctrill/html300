@@ -3,10 +3,13 @@ html{
     }
 
 /* remember the target divided by content = result formula */
+head {
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
 
 body {
-  font: normal 100% "Cambria", "Georgia", "sans-serif";
-  background-image: url(../images/BCB-Background-Image1.jpg);
+  font-family: 'Carrois Gothic SC', sans-serif;
+  background: ghostwhite;
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size:cover;
@@ -14,7 +17,20 @@ body {
 }
 
 header {
-  padding: 2em; 
+  margin: 2em 4em 15em 0em;
+  align-items: center;
+  align-content: center;  
+}
+
+#title {
+  box-shadow:0px 0px 0px 1px palegoldenrod inset;
+ background:rgba(255,255,255,0.45);
+  min-height: 15%;
+}
+
+.introduction:hover
+{
+        border-radius:50%;
 }
 
 /* div {
@@ -25,31 +41,54 @@ header {
     /* -moz-opacity: .50; /* FF lt 1.5, Netscape */
   
 h1 {
-  font-size: 1.5em; /* 16px / 24px */
-  font-style: italic;
+  font: bold .4583333333em /* 11px / 24px */ 'Carrois Gothic SC', 'Oswald';
+  font-size: 300%; /* 16px / 24px */
+/*
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+*/
+  text-shadow: rgba(0,0,0,0.5) -1px 0,
+               rgba(0,0,0,0.3) 0 -1px,
+               rgba(255,255,255,0.5) 0 1px, 
+               rgba(0,0,0,0.3) -1px -2px;
 }
 
-h1 a {
+h3 a {
   color: #747474; 
-  font: bold .4583333333em /* 11px / 24px */ "Calibri", "Optima", "Arial", "serif";
-  letter-spacing: .15em;
+  font: bold .4583333333em /* 11px / 24px */ 'Carrois Gothic SC', 'Oswald';
+  letter-spacing: .25em;
   text-transform: uppercase;
   text-decoration: none;  
 }
 
+h2 {
+ text-decoration: underline overline;
+ padding: .5em;
+  line-height: inherit;
+  
+}
+
+p {
+ font: "Calibri", "Optima", "Arial", "serif"; 
+}
+/*
+
 div {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+*/
 /*
   border-bottom-left-radius: 1.75em;
   border-bottom-right-radius: 12pt;
 */
   
-}
 
+/*
 #page {
   margin: 36px auto;
   width: 90%;  
+*/
 /*  border: solid white;*/
 }
 
@@ -63,7 +102,7 @@ div {
 
 .portfolio .main {
   position:relative; 
-  box-shadow:0px 0px 0px 1px blue inset;
+  box-shadow:0px 0px 0px 1px palegoldenrod inset;
   background: white;  
   background-color: rgba(255,255,255,0.75);
   padding-bottom: 2em;
@@ -115,14 +154,15 @@ img.full, embed, object.full, .main img, .main object, video {
 footer {
  clear: both;
  padding: 0.8em 5.33333%;  
-box-shadow:0px 0px 0px 1px purple inset;
-  background: white;
+box-shadow:0px 0px 0px 1px palegoldenrod inset;
+  background: rgba(255,255,255,0.45);
 }
+/*
 
 @media only screen and (max-width: 767px) {
   body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
+     The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections 
     background-image: url(../images/BCB-Background-Image1.jpg);
   }
-}
+}*/
