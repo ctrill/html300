@@ -26,6 +26,7 @@
   width: 90%;
   max-width: 1980px;
   margin: 0 auto; 
+  padding-top: 2em;
   text-align: center;
   overflow: visible;
 }
@@ -174,4 +175,14 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent #99ffdd transparent transparent;
   }
+}
+/*special styling */
+.header {
+  text-align: center;
+/*  color: #869B9C;*/
+/*  text-shadow: 0 2px 2px #000;*/
+}
+
+#title {
+   background-attachment: fixed;  
 }

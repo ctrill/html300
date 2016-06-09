@@ -4,12 +4,12 @@ html{
 
 /* remember the target divided by content = result formula */
 head {
-  font-family: sans-serif;
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 body {
-  font-family: 'Carrois Gothic SC', sans-serif;
-  background: ghostwhite;
+  font-family: 'sans-serif', 'Carrois Gothic SC';
+  background-image: url(../images/LeafForSite.jpg);
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size:cover;
@@ -17,9 +17,15 @@ body {
 }
 
 header {
-  margin: 2em 4em 15em 0em;
+/*  margin: 2em 4em 15em 0em;*/
   align-items: center;
   align-content: center;  
+}
+
+.slide {
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 #title {
@@ -40,9 +46,10 @@ header {
     /* -khtml-opacity: .50; /* Safari 1.x */
     /* -moz-opacity: .50; /* FF lt 1.5, Netscape */
   
+
 h1 {
-  font: bold .4583333333em /* 11px / 24px */ 'Carrois Gothic SC', 'Oswald';
-  font-size: 300%; /* 16px / 24px */
+  font: bold .4583333333em /* 11px / 24px */ 'Oswald';
+  font-size: 400%;
 /*
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
@@ -51,21 +58,23 @@ h1 {
   text-shadow: rgba(0,0,0,0.5) -1px 0,
                rgba(0,0,0,0.3) 0 -1px,
                rgba(255,255,255,0.5) 0 1px, 
-               rgba(0,0,0,0.3) -1px -2px;
+               rgba(0,0,0,0.3) -1px -1px;
 }
 
 h3 a {
   color: #747474; 
-  font: bold .4583333333em /* 11px / 24px */ 'Carrois Gothic SC', 'Oswald';
-  letter-spacing: .25em;
+  font: bold .7583333333em /* 11px / 24px */ 'Carrois Gothic SC', 'Oswald';
+  letter-spacing: .30em;
   text-transform: uppercase;
   text-decoration: none;  
 }
 
 h2 {
+  font: bold 'Oswald';
  text-decoration: underline overline;
  padding: .5em;
   line-height: inherit;
+  font-size: 225%;
   
 }
 
@@ -89,8 +98,8 @@ div {
   margin: 36px auto;
   width: 90%;  
 */
-/*  border: solid white;*/
-}
+/*  border: solid white;}*/
+
 
 .lede {
   padding: 0 0.8em 5.33333% .8em;  
@@ -163,9 +172,6 @@ a:link, a:visited {
     cursor: auto;
 }
 
-link {
- padding-top: 10em; 
-}
 /*
 
 @media only screen and (max-width: 767px) {
